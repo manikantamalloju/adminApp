@@ -18,6 +18,8 @@ import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
 
+import avatar from "../../assets/user.png";
+
 const Item = ({ title, to, icon, selected, setSelected }) => {
   console.log(title, to, "tovalues");
   const theme = useTheme();
@@ -122,7 +124,7 @@ const MySidebar = () => {
                   alt="profile-user"
                   width="100px"
                   height="100px"
-                  src="../../assets/user.png"
+                  src={avatar}
                   style={{ cursor: "pointer", borderRadius: "50%" }}
                 />
               </Box>
